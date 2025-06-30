@@ -1,10 +1,10 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';  // <-- import BrowserRouter
+import { HashRouter } from 'react-router-dom';  // <-- change BrowserRouter to HashRouter
 import App from './App.tsx';
 import './index.css';
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename="/portfolio">   {/* <-- add basename here */}
+  <HashRouter>   {/* <-- remove basename here */}
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );
